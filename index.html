@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link rel="stylesheet" href="/css/styles.css">
+    <title>PING PONG</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+     <div class="row">
+      <div class="jumbotron">
+      <h1><strong><em>PINGPONG</em></strong></h1>
+       </div>
+      </div>
+     <div class="row">
+      <div class="col-md-6">
+        <h2><strong><em>Rules</em></strong></h2>
+        <h3>Ping Pong will count from one up to your numbers</h3>
+         <li>
+            <ul>Numbers divisible by 3 become"ping"</ul>
+            <ul>Numbers divisible by 5 become "pong"</ul>
+            <ul>Numbers divisible by 15 become"pingpong"</ul>
+         </li>
+
+      </div>
+      <div class="col-md-6">
+        <div class="text-center">GAME</div>
+        <form id="form">
+        <label></label>
+        <input id="submit" type="number">
+        <button type ="submit">Submit</button>
+      </form>
+      <p>This is your output<span ></span></p>
+      <ul class="output">
+
+      </ul>
+      </div>
+      </div>
+      <div class="row">
+        <h2>About the creator</h2>
+      </div>
+
+  </div>
+
       <script src="js/jquery-3.3.1.js"></script>
       <script src="js/scripts.js"></script>
-      <title>ping-pong</title>
-    </head>
-    <body>
-      <div class="container">
-        <h1>Let,s play!</h1>
-
-        <form id="ping-pong">
-          <div class="form-group">
-            <label for="number">Enter a number and find if it is a number</label>
-            <input id="number" type="number">
-          </div>
-
-          <button type="submit" class="btn">ping-pong</button>
-        </form>
-
-        <div id="result">
-
-        </div>
-      </div>
-    </body>
-  </html>
+  </body>
+</html>
