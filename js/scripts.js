@@ -1,11 +1,16 @@
 $(document).ready(function() {
-  $("form#ping-pong").submit(function(event) {
-    var divide = $("input#number").val();
-    var result = parseInt(divide);
-    $("#result").text(result);
-    event.preventDefault();
+    $("#enter form").submit(function(event) {
+      event.preventDefault();
+      var number = parseInt($("#value").val());
+     console.log(number);
+      var result = (number);
+      $("#result").text(result);
+    });
   });
-});
-var divide = function(number){
-  alert(number);
-};
+  var number = function(value) {
+    if (number % 3 === 0) {
+      return ping;
+    } else {
+      return false;
+    }
+  };
