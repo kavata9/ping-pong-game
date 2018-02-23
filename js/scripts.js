@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
+  $("form#ping-pong").submit(function(event) {
     event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
+    var year = parseInt($("input#number").val());
+    var result = pingpong(number);
     $("#result").text(result);
   });
 });
