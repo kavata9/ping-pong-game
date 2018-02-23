@@ -1,8 +1,11 @@
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
-    event.preventDefault();
-    var year = parseInt($("input#number").val());
-    var result = pingpong(number);
+    var divide = $("input#number").val();
+    var result = parseInt(divide);
     $("#result").text(result);
+    event.preventDefault();
   });
 });
+var divide = function(number){
+  alert(number);
+};
