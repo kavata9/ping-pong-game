@@ -1,16 +1,11 @@
-$(document).ready(function() {
-    $("#enter form").submit(function(event) {
-      event.preventDefault();
-      var number = parseInt($("#value").val());
-     console.log(number);
-      var result = (number);
-      $("#result").text(result);
-    });
+$(document).ready(function(){
+  //gather user input
+  //var input=parseInt(prompt("Enter the number"));
+  //create a function
+  $("#form").submit(function(){
+    var input=$("#submit").val();
+    ping(input);
+
+    event.preventDefault();
   });
-  var number = function(value) {
-    if (number % 3 === 0) {
-      return ping;
-    } else {
-      return false;
-    }
-  };
+});
