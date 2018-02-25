@@ -1,35 +1,32 @@
-function ping(input){
-  for (var i = 1; i <=500; i++) {
-    if ((i%3===0) && (i%5===0)){
+// business logic
+var numbers = []
 
-     $(".output").append("<li>"+ "pingpong"+"</li>");
+function game(numberInput, numbers) {
+  for (var i = 1; i <= numberInput; i++)
+    if (i % 15 == 0) {
+      numbers.push("game");
 
-   }else if (i%3===0) {
-
-     $(".output").append("<li>"+"ping"+"</li>");
-   } else if (i%5===0) {
-
-     $(".output").append("<li>"+"pong"+"</li>");
-   }
-   else{
-
-      $(".output").append("<li>"+i+"</li>");
     }
-  }//end of for
+  else if (i % 3 == 0) {
+    numbers.push("ping");
+  } else if (i % 5 == 0) {
+    numbers.push("pong");
+  } else {
+    numbers.push(i);
+  }
 }
-//call the function
 
-$(document).ready(function(){
-  //gather user input
-  //var input=parseInt(prompt("Enter the number"));
-  //create a function
-  $("#form").submit(function(){
-    var input=$("#submit").val();
-    ping(input);
-
+//user logic
+$(document).ready(function() {
+  $("#user").click(function() {
     event.preventDefault();
+    var numberInput = parseInt($("input#number").val());
+
+    game(numberInput, numbers);
+
+    numbers.forEach(function(number) {
+      $("#resultslist").append("<li>" + number + "</li>");
+    });
+
   });
-
-
-
-});
+})
