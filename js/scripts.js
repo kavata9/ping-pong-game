@@ -4,7 +4,7 @@ var numbers = []
 function game(numberInput, numbers) {
   for (var i = 1; i <= numberInput; i++)
     if (i % 15 == 0) {
-      numbers.push("game");
+      numbers.push("pingpong");
 
     }
   else if (i % 3 == 0) {
