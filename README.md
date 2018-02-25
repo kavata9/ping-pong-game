@@ -1,23 +1,52 @@
 # {Application Name}
 Ping-pong-GAME
 #### {Brief description of application}, {Date of current version}
+The application is used to find numbers that are multiples of 3,5 and 15 the retuns a result based on the set condition.
 
 #### By **{Agnes kavata Musyoka}**
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
-## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
-## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+This is a ping-pong game where a user enters a number and if it is a multiple of 3 it displays "ping" for the answer and a multiple of 5 displays "pong"and if it was a multiple of 15 "pingpong".This is a game written with backhend code of javascript and front end by html styled by css.
+## Specification
+* Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "pingpong"
+Example
+if you use the number 15 the output will be as follows:
+
+1
+
+2
+
+ping
+
+4
+
+pong
+
+ping
+
+7
+
+8
+
+ping
+
+pong
+
+11
+
+ping
+
+13
+
+14
+
+pingpong
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+The business logic of this website has been written using JavaScript to bring out the logic of the multiples.The user interface was created using HTML and styled with css.
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+If intrested or want to raise a question kindly contact me on kavatamusyoka24@gmail.com.Link to deployed page (click here) https://kavata9.github.io/ping-pong-game/
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+this application's source code is free for any open source projects
+Copyright (c) {2018} **{Agnes Kavata Musyoka -student moringa schol february 25/2018}**
