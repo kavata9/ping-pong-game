@@ -1,5 +1,5 @@
 function ping(input){
-  for (var i = 1; i <=input; i++) {
+  for (var i = 1; i <=500; i++) {
     if ((i%3===0) && (i%5===0)){
 
      $(".output").append("<li>"+ "pingpong"+"</li>");
